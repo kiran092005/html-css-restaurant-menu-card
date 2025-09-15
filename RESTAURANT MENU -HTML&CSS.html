@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-style: italic;
+      color: black;
+    }
+
+    body {
+      background:rgb(136, 22, 136);
+    }
+
+    header {
+      background: linear-gradient(135deg, #5D3587, #ff9068);
+      color: violet;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    .menu {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      margin: 40px 0 20px;
+      font-size: 2rem;
+      color: #FC5185;
+      border-left: 5px solid #ff6f61;
+      padding-left: 10px;
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #FFADF0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(250, 3, 238, 0.274);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+      color: #2F416D;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .price {
+      color: #ff6f61;
+      font-weight: bold;
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <header>
+    <h1> Delicious Bites Menu</h1>
+    <p>Fresh • Tasty • Affordable</p>
+  </header>
+
+  <section class="menu">
+    <!-- Starters -->
+    <h2>Starters</h2>
+    <div class="items">
+      <div class="card">
+        <img src="./tomatosoup.png" alt="Tomato Soup"/>
+        <div class="card-content">
+          <h3>Tomato Soup</h3>
+          <p>Rich & creamy soup made with fresh tomatoes.</p>
+          <p class="price">₹120</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="spring roll" alt="Spring Rolls"/>
+        <div class="card-content">
+          <h3>Spring Rolls</h3>
+          <p>Golden fried rolls filled with fresh veggies.</p>
+          <p class="price">₹150</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./garlicbread" alt="Garlic Bread"/>
+        <div class="card-content">
+          <h3>Garlic Bread</h3>
+          <p>Toasted bread with butter & garlic seasoning.</p>
+          <p class="price">₹90</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Course -->
+    <h2>Main Course</h2>
+    <div class="items">
+      <div class="card">
+        <img src="./pannerbuttermasala" alt="Paneer Butter Masala"/>
+        <div class="card-content">
+          <h3>Paneer Butter Masala</h3>
+          <p>Paneer cooked in a creamy tomato-based curry.</p>
+          <p class="price">₹220</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./chickenbriyani" alt="Chicken Biryani"/>
+        <div class="card-content">
+          <h3>Chicken Biryani</h3>
+          <p>Flavored rice cooked with aromatic spices & chicken.</p>
+          <p class="price">₹280</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="vegpulao" alt="Veg Pulao"/>
+        <div class="card-content">
+          <h3>Veg Pulao</h3>
+          <p>Rice cooked with mixed vegetables & mild spices.</p>
+          <p class="price">₹180</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <h2>Desserts</h2>
+    <div class="items">
+      <div class="card">
+        <img src="./gulabjamun" alt="Gulab Jamun"/>
+        <div class="card-content">
+          <h3>Gulab Jamun</h3>
+          <p>Sweet dumplings soaked in sugar syrup.</p>
+          <p class="price">₹100</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./icecreamsundae" alt="Ice Cream Sundae"/>
+        <div class="card-content">
+          <h3>Ice Cream Sundae</h3>
+          <p>Three scoops topped with chocolate sauce & nuts.</p>
+          <p class="price">₹150</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./brownie" alt="Brownie"/>
+        <div class="card-content">
+          <h3>Brownie</h3>
+          <p>Warm chocolate brownie served with vanilla ice cream.</p>
+          <p class="price">₹170</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Drinks -->
+    <h2>Drinks</h2>
+    <div class="items">
+      <div class="card">
+        <img src="./mangoshake" alt="Mango Shake"/>
+        <div class="card-content">
+          <h3>Mango Shake</h3>
+          <p>Refreshing shake made with fresh mangoes.</p>
+          <p class="price">₹120</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./lemonsoda" alt="Lemon Soda"/>
+        <div class="card-content">
+          <h3>Lemon Soda</h3>
+          <p>Cool & fizzy soda with lemon twist.</p>
+          <p class="price">₹60</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./coldcofee" alt="Cold Coffee"/>
+        <div class="card-content">
+          <h3>Cold Coffee</h3>
+          <p>Chilled coffee with ice cream topping.</p>
+          <p class="price">₹140</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Delicious Bites | Designed with  using HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
+  
